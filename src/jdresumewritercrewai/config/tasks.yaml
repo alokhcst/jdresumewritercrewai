@@ -1,0 +1,299 @@
+job_research_task:
+  description: >
+    Analyze the job description provided at: {job_posting_url}
+    
+    Extract and organize the following key information:
+    1. Job title, company name, and location
+    2. Required technical skills (programming languages, frameworks, databases, tools, platforms)
+    3. Required soft skills and qualifications
+    4. Key responsibilities and job duties
+    5. Experience requirements (years, level)
+    6. Education requirements
+    7. Keywords that are likely used by ATS systems
+    8. Preferred qualifications
+    
+    Present this information in a structured, clear format that can be used by other agents.
+  expected_output: >
+    A comprehensive job analysis report containing:
+    - Job title, company, location
+    - Required skills (technical and soft)
+    - Responsibilities and qualifications
+    - ATS keywords
+    - Preferred qualifications
+  agent: job_analyzer
+  output_file: output/proposed_job_analysis.md
+
+company_research_task:
+  description: >
+    Research the company: {company_name} from the job posting.
+    
+    Gather intelligence about:
+    1. Company culture and values
+    2. Recent news, funding, or acquisitions
+    3. Technology stack commonly used
+    4. Leadership team and company size
+    5. Key products or services
+    6. Industry position and competitors
+    7. Hiring managers
+    8. Recruiters
+    
+    This information will help tailor the resume to align with the company's values and culture.
+  expected_output: >
+    A company intelligence report containing company culture insights, tech stack, recent developments, 
+    and any relevant information that can help tailor the resume content.
+  agent: company_intelligence
+  dependencies:
+    - job_research_task
+  output_file: output/company_intelligence.md
+
+
+candidate_analysis_task:
+  description: >
+    Analyze the candidate profile provided in the input data: {candidate_profile}
+    
+    Organize and structure all candidate information including:
+    1. Personal information (name, contact details, location)
+    2. Current professional summary
+    3. Technical skills inventory (languages, frameworks, databases, cloud platforms, tools)
+    4. Work experience (for each role: company, title, duration, responsibilities, achievements, technologies)
+    5. Education background
+    6. Certifications
+    7. Notable achievements and awards
+    8. Volunteer experience
+    
+    Ensure all information is properly categorized and easily accessible for matching.
+  expected_output: >
+    A well-organized candidate profile breakdown with all skills, experiences, achievements, and qualifications 
+    properly categorized and structured for further analysis.
+  agent: candidate_profiler
+  output_file: output/candidate_profile_analysis.md
+
+
+skills_matching_task:
+  description: >
+    Match the candidate's skills and experiences from the candidate profile analysis with the job requirements 
+    from the job research task.
+    
+    Your responsibilities include:
+    1. Compare candidate skills with required job skills and highlight matches
+    2. Rank work experiences by relevance to the job
+    3. Identify any skill gaps
+    4. Determine which achievements most closely align with the job requirements
+    5. Suggest the optimal order for presenting experiences in the resume
+    
+    Focus on finding the strongest matches and identifying the most relevant experiences.
+  expected_output: >
+    A skills matching report containing:
+    - Matched skills (required vs candidate)
+    - Ranked relevant work experiences
+    - Key achievements aligned with job requirements
+    - Skill gap analysis
+    - Recommended experience ordering for the resume
+  agent: skills_matcher
+  dependencies:
+    - job_research_task
+    - candidate_analysis_task
+  output_file: output/skills_matching_report.md
+
+
+
+content_creation_task:
+  description: >
+    Create compelling resume content based on the matched skills and experiences.
+    
+    Generate the following for the resume:
+    1. A tailored professional summary (2-3 sentences) that incorporates job keywords and highlights 
+       the candidate's most relevant qualifications
+    2. Rewritten achievement-focused bullet points for relevant work experiences with metrics and impact
+    3. A comprehensive skills section organized by category
+    4. Certifications and achievements sections if applicable
+    
+    Ensure all content is ATS-optimized with relevant keywords naturally incorporated. Focus on quantifiable 
+    achievements and results. Align content with company research insights where appropriate.
+  expected_output: >
+    Tailored resume content including:
+    - Professional summary
+    - Achievement-focused experience descriptions
+    - Skills section
+    - Certifications and achievements sections
+    - All content optimized for ATS keywords
+  agent: resume_writer
+  dependencies:
+    - skills_matching_task
+    - company_research_task
+  output_file: output/resume_content.md
+
+
+
+resume_assembly_task:
+  description: >
+    Assemble the final resume document in markdown format.
+    
+    Using the candidate personal information and the tailored content created, create a complete markdown resume with:
+    1. Header with candidate name and contact information
+    2. Professional Summary section
+    3. Certifications section (if applicable)
+    4. Achievements section (if applicable)
+    5. Technical Skills section with categorized skills
+    6. Professional Experience section with all relevant positions
+    7. Education section
+    8. Volunteering section (if applicable)
+    
+    Follow the markdown template structure and ensure:
+    - ATS-friendly formatting (no tables, standard headers)
+    - Proper markdown syntax
+    - Consistent formatting throughout
+    - No errors or inconsistencies
+    - Proper keyword placement
+    
+    The final output should be ready for conversion to PDF.
+  expected_output: >
+    A complete, well-formatted markdown resume document (.md file) that is ATS-optimized and ready for PDF conversion.
+    The document should follow proper markdown formatting and include all sections with tailored content.
+  agent: formatter
+  
+  dependencies:
+    - content_creation_task
+  output_file: resume.md
+  
+cover_letter_creation_task:
+  description: >
+    Create a compelling, personalized cover letter for the specific job and company.
+    
+    Using the job analysis, company research, and candidate profile, create a cover letter that:
+    1. Demonstrates genuine interest in the specific role and company
+    2. Connects candidate experiences to job requirements
+    3. Highlights relevant achievements and skills
+    4. Shows cultural fit and alignment with company values
+    5. Includes a strong opening that captures attention
+    6. Ends with a compelling call to action
+    
+    The cover letter should be:
+    - Personalized and specific to the role
+    - Professional yet personable in tone
+    - Concise but comprehensive (3-4 paragraphs)
+    - Free of generic phrases and clichés
+    - Aligned with the company's culture and values
+  expected_output: >
+    A well-crafted, personalized cover letter that complements the resume and demonstrates genuine interest 
+    in the specific role and company. The letter should be professional, engaging, and tailored to the 
+    job requirements and company culture.
+  agent: cover_letter_writer
+  dependencies:
+    - job_research_task
+    - company_research_task
+    - candidate_analysis_task
+  output_file: output/cover_letter.md
+
+
+skills_gap_analysis_task:
+  description: >
+    Conduct a comprehensive skills gap analysis between the candidate's current skills and the job requirements.
+    
+    Analyze and provide:
+    1. Required skills vs. candidate skills comparison
+    2. Missing critical skills identification
+    3. Skill level assessment (beginner, intermediate, advanced)
+    4. Priority ranking of skills to develop
+    5. Learning recommendations and resources
+    6. Timeline suggestions for skill development
+    7. Alternative ways to demonstrate missing skills
+    8. Career growth pathway recommendations
+    
+    Focus on:
+    - Technical skills gaps
+    - Soft skills requirements
+    - Industry-specific competencies
+    - Emerging technology trends
+    - Certifications and training opportunities
+  expected_output: >
+    A detailed skills gap analysis report containing:
+    - Comprehensive skills comparison matrix
+    - Prioritized list of missing skills
+    - Specific learning recommendations
+    - Resource suggestions (courses, certifications, projects)
+    - Timeline for skill development
+    - Career growth strategies
+  agent: skills_gap_analyzer
+  dependencies:
+    - job_research_task
+    - candidate_analysis_task
+    - skills_matching_task
+  output_file: output/skills_gap_analysis.md
+
+
+interview_preparation_task:
+  description: >
+    Create a comprehensive interview preparation guide based on the job requirements and company research.
+    
+    Generate:
+    1. Likely technical interview questions
+    2. Behavioral interview questions (STAR method)
+    3. Company-specific questions
+    4. Industry trend questions
+    5. Leadership and teamwork scenarios
+    6. Problem-solving examples
+    7. Questions to ask the interviewer
+    8. Preparation strategies and tips
+    9. Common interview mistakes to avoid
+    10. Follow-up strategies
+    
+    Categorize questions by:
+    - Technical skills assessment
+    - Behavioral competencies
+    - Cultural fit evaluation
+    - Leadership potential
+    - Problem-solving abilities
+    
+    Provide sample answers and preparation frameworks.
+  expected_output: >
+    A comprehensive interview preparation guide containing:
+    - Categorized interview questions (technical, behavioral, company-specific)
+    - Sample answers and response frameworks
+    - Preparation strategies and tips
+    - Questions to ask the interviewer
+    - Common mistakes to avoid
+    - Follow-up strategies
+  agent: interview_prep_specialist
+  dependencies:
+    - job_research_task
+    - company_research_task
+    - skills_matching_task
+  output_file: output/interview_prep_guide.md
+
+
+linkedin_outreach_task:
+  description: >
+    Create personalized LinkedIn connection messages and follow-up communications for hiring managers and talent acquisition specialists.
+    
+    Generate:
+    1. Initial connection request messages
+    2. Follow-up messages after connection
+    3. Messages for hiring managers
+    4. Messages for talent acquisition specialists
+    5. Thank you messages after interviews
+    6. Follow-up messages for application status
+    
+    Each message should be:
+    - Personalized and specific
+    - Professional yet authentic
+    - Concise (under LinkedIn's character limits)
+    - Value-focused (what you can offer)
+    - Respectful of their time
+    - Free of sales pitches or desperation
+    
+    Include variations for different scenarios and timing.
+  expected_output: >
+    A collection of personalized LinkedIn messages including:
+    - Connection request messages for hiring managers
+    - Connection request messages for recruiters
+    - Follow-up messages after connection
+    - Thank you messages after interviews
+    - Application follow-up messages
+    - All messages optimized for LinkedIn's character limits and best practices
+  agent: linkedin_message_writer
+  dependencies:
+    - job_research_task
+    - company_research_task
+    - candidate_analysis_task
+  output_file: output/linkedin_messages.md  
