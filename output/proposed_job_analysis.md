@@ -1,38 +1,49 @@
-- **Job Title**: Assistant Vice President - Technology Supply Chain Leader
-- **Company Name**: Genpact
-- **Location**: Atlanta Metropolitan Area
-
-- **Required Technical Skills**:
-  - Supply Chain Processes
-  - Technology Optimization
-  - Automation
-  - Application Portfolio Management
-  - Experience in Manufacturing Environments
-
-- **Required Soft Skills and Qualifications**:
-  - Experienced and dynamic leadership
-  - Strong strategic planning abilities
-  - Capable of driving process improvements
-  - Excellent communication and liaison skills
-
-- **Key Responsibilities and Job Duties**:
-  - Drive the strategic deployment and continuous improvement of supply chain application landscape
-  - Identify and champion strategic process improvements
-  - Lead application strategy and rationalization
-  - Provide oversight on supply chain application development and maintenance projects
-
-- **Experience Requirements**:
-  - Deep expertise in supply chain processes and technology
-  - Prior experience in manufacturing environments
-
-- **Education Requirements**: Not explicitly stated in the description.
-
-- **Keywords Likely Used by ATS Systems**:
-  - Supply Chain Management
-  - Process Improvement
-  - Automation
-  - Application Strategy
-  - Strategic Planning
-  - Manufacturing Optimization
-
-- **Preferred Qualifications**: Not explicitly stated in the description.
+{
+  "Job Title": "Data Management & Strategy - Oil & Gas - Manager",
+  "Company Name": "EY",
+  "Location": "Alpharetta, GA",
+  "Required Technical Skills": [
+    "Data Governance",
+    "Analytics",
+    "Data Management",
+    "Data Visualization",
+    "Business Intelligence",
+    "Data Stewardship",
+    "Master Data Management (MDM)",
+    "Metadata Management",
+    "Data Cataloging"
+  ],
+  "Required Soft Skills and Qualifications": [
+    "Strategic Leadership",
+    "Business Acumen",
+    "Client Relationship Management",
+    "Project Management",
+    "Communication Skills"
+  ],
+  "Key Responsibilities": [
+    "Design and apply methods to govern the lifecycle of data assets.",
+    "Perform maturity assessments on data management capabilities.",
+    "Advise on tools and roadmaps to implement data strategies.",
+    "Define and execute the analytics and governance strategy for clients.",
+    "Develop and implement data governance frameworks and policies.",
+    "Oversee data consistency and discoverability practices."
+  ],
+  "Experience Requirements": "5+ years of experience in data management or analytics roles.",
+  "Education Requirements": "Bachelor's degree in a relevant field (e.g., Computer Science, Data Science, Business Administration).",
+  "Keywords": [
+    "Data Management",
+    "Data Analytics",
+    "Consulting",
+    "Digital Analytics",
+    "Business Intelligence",
+    "Analytics Strategy",
+    "Data Governance",
+    "Master Data Management",
+    "Data Visualization"
+  ],
+  "Preferred Qualifications": [
+    "Advanced degree in relevant field.",
+    "Experience in oil and gas sector.",
+    "Familiarity with data privacy regulations."
+  ]
+}

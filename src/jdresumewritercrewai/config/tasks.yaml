@@ -151,10 +151,9 @@ resume_assembly_task:
     A complete, well-formatted markdown resume document (.md file) that is ATS-optimized and ready for PDF conversion.
     The document should follow proper markdown formatting and include all sections with tailored content.
   agent: formatter
-  
   dependencies:
     - content_creation_task
-  output_file: resume.md
+  output_file: output/resume.md
   
 cover_letter_creation_task:
   description: >

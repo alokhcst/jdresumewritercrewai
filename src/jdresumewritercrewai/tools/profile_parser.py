@@ -1,12 +1,12 @@
 from crewai.tools import BaseTool
-from typing import Type
+from typing import Type, Union, Any
 from pydantic import BaseModel, Field
 import json
 
 
 class ParseProfileInput(BaseModel):
     """Input schema for CandidateProfileParser."""
-    profile_data: str = Field(..., description="The candidate profile data (as JSON string or text)")
+    profile_data: Union[str, dict, Any] = Field(..., description="The candidate profile data (as JSON string, dict, or text)")
 
 
 class CandidateProfileParser(BaseTool):
@@ -18,14 +18,20 @@ class CandidateProfileParser(BaseTool):
     )
     args_schema: Type[BaseModel] = ParseProfileInput
 
-    def _run(self, profile_data: str) -> str:
+    def _run(self, profile_data: Union[str, dict, Any]) -> str:
         """Parse candidate profile data into structured format."""
         try:
-            # Try to parse as JSON
+            # Handle both string and dict inputs
             if isinstance(profile_data, str):
-                profile = json.loads(profile_data)
-            else:
+                try:
+                    profile = json.loads(profile_data)
+                except json.JSONDecodeError:
+                    # If it's not valid JSON, treat it as plain text
+                    return f"Error: Unable to parse profile data as JSON. Received: {profile_data[:200]}..."
+            elif isinstance(profile_data, dict):
                 profile = profile_data
+            else:
+                return f"Error: Unexpected profile_data type: {type(profile_data)}"
             
             # Build structured output
             output_parts = []

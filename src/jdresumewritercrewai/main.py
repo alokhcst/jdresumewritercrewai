@@ -33,13 +33,13 @@ def run():
     """
     
     # Read job posting URL from file, fallback to default
-    job_posting_url = read_file_content("knowledge/job_url.txt") #or "https://example.com/job-posting-url"
+    job_posting_url = read_file_content("input/job_url.txt") #or "https://example.com/job-posting-url"
     
     # Read company name from file, fallback to default
-    company_name = read_file_content("knowledge/company_name.txt") #or "Example Company"
+    company_name = read_file_content("input/company_name.txt") #or "Example Company"
     
     # Load candidate profile from JSON file
-    candidate_profile_path = "sample_candidate_profile.json"
+    candidate_profile_path = "input/sample_candidate_profile.json"
     try:
         with open(candidate_profile_path, 'r', encoding='utf-8') as f:
             candidate_profile = json.load(f)
@@ -138,16 +138,16 @@ def run():
         print("\n" + "="*60)
         print("COMPREHENSIVE JOB APPLICATION PACKAGE COMPLETE!")
         print("="*60)
-        print("\nGenerated files:")
-        print("📄 resume.md - ATS-optimized resume")
-        print("📝 cover_letter.md - Personalized cover letter")
-        print("📊 skills_gap_analysis.md - Skills gap analysis and recommendations")
-        print("🎯 interview_prep_guide.md - Comprehensive interview preparation")
-        print("💼 linkedin_messages.md - LinkedIn outreach messages")
+        print("\nGenerated files in output/ directory:")
+        print("📄 output/resume.md - ATS-optimized resume")
+        print("📝 output/cover_letter.md - Personalized cover letter")
+        print("📊 output/skills_gap_analysis.md - Skills gap analysis and recommendations")
+        print("🎯 output/interview_prep_guide.md - Comprehensive interview preparation")
+        print("💼 output/linkedin_messages.md - LinkedIn outreach messages")
         print("\nTo convert to PDF:")
-        print("1. Run: python convert_to_html.py")
-        print("2. Open resume.html in browser and print to PDF")
-        print("3. Repeat for other .md files as needed")
+        print("1. Run: python convert_all_to_html.py")
+        print("2. Open output/resume.html in browser and print to PDF")
+        print("3. Repeat for other .html files as needed")
         print("\n" + "="*60)
         return result
     except Exception as e:

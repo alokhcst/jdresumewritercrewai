@@ -1,47 +1,31 @@
-{
-  "Company Name": "Genpact",
-  "Company Culture and Values": {
-    "Key Values": [
-      "Client focus",
-      "Integrity",
-      "Inclusivity",
-      "Operational excellence",
-      "Innovation"
-    ],
-    "Culture": "Genpact fosters an inclusive culture that values diversity, encourages team collaboration, and aims for continuous improvement. They empower individuals to bring their authentic selves to work, with a strong focus on employee development."
-  },
-  "Recent News": {
-    "Acquisition": "In June 2025, Genpact acquired XponentL Data, a company focused on data products and AI solutions, to enhance its capabilities in data strategy and innovation.",
-    "Financial Performance": "As of 2023, Genpact reported total revenues of $4.48 billion, a slight increase over the previous year. The company has plans for significant investments in AI technologies."
-  },
-  "Technology Stack": {
-    "Focus Areas": [
-      "Cloud services",
-      "Application integration",
-      "Robotic process automation",
-      "Artificial intelligence",
-      "Data analytics"
-    ],
-    "Notable Services": "Genpact provides advanced analytics, AI-driven solutions, and digital transformation services to help clients optimize their operations."
-  },
-  "Leadership Team and Company Size": {
-    "Leadership": [
-      {"Name": "Balkrishan 'BK' Kalra", "Title": "CEO"},
-      {"Name": "Caitlin Blewett", "Title": "CMO"},
-      {"Name": "Mike Weiner", "Title": "CFO"},
-      {"Name": "Sanjeev Vohra", "Title": "Senior Vice President"}
-    ],
-    "Company Size": "As of 2024, Genpact has approximately 140,000 employees globally."
-  },
-  "Key Products or Services": [
-    "Supply Chain Management",
-    "Finance and Accounting Services",
-    "Customer Service Operations",
-    "Risk and Compliance Management",
-    "Data and Analytics Services"
-  ],
-  "Industry Position and Competitors": {
-    "Position": "Genpact is a leader in the BPO and consultancy sector, noted for its innovative solutions and advanced technology capabilities.",
-    "Competitors": ["Accenture", "Cognizant", "Infosys", "TCS", "IBM"]
-  }
-}
+**Company Intelligence Report: EY (Ernst & Young)**
+
+**1. Company Culture and Values:**
+EY stands for integrity, respect, teaming, and inclusiveness. They value collaboration and aim to create a better working world through innovation and strategic initiatives. Their focus on diversity, equity, and inclusiveness is integral, as seen in their commitment to employee well-being and continuous professional development.
+
+**2. Recent News and Developments:**
+- As of October 2025, EY announced the acquisition of Aqurance, enhancing their capabilities in life sciences and allowing for improved integration and compliance within the pharmaceutical sector.
+- They are expanding their service offerings related to Veeva technology, which is pivotal for clients in life sciences. The acquisition aims to create a more integrated approach for clients navigating regulatory requirements and digital transformation.
+- EY's leadership has indicated a shift towards adopting AI and data-driven strategies to enhance efficiency and decision-making across various service areas.
+
+**3. Technology Stack:**
+- EY employs a diverse technology stack, which includes modern frameworks and languages like Angular, React, Java, Node.js, and PHP for front-end and back-end implementations. 
+- They also utilize services from cloud providers like Microsoft Azure and AWS for scalable solutions.
+- The technology stack supports algorithms and big data analytics applicable to various consulting projects, delivering insights and driving transformations.
+
+**4. Leadership Team and Company Size:**
+- EY is governed by a global executive team led by top executives committed to creating trust and delivering innovative solutions across different sectors.
+- The firm has a substantial workforce and operates in over 150 countries, highlighting its global reach and impact on the market.
+
+**5. Key Products or Services:**
+- EY offers services in assurance, tax, consulting, and advisory, focusing on sectors such as life sciences, technology, and financial services.
+- Their consulting division, particularly EY-Parthenon, specializes in M&A strategy, performance improvement, and industry-specific solutions.
+
+**6. Industry Position and Competitors:**
+- EY is ranked among the "Big Four" professional services firms, competing closely with Deloitte, KPMG, and PwC. They are recognized for their deep industry knowledge and comprehensive service offerings which are enhanced by constant innovation.
+
+**7. Hiring Managers and Recruiters:**
+- The hiring landscape at EY values candidates with strong analytical skills, leadership potential, and expertise in data management and analytics—qualities already reflected in their job postings. 
+- Other preferred qualifications include specific sector experience, particularly in oil and gas, as well as familiarity with data privacy regulations.
+
+This comprehensive report provides insights into EY that can help tailor your resume and highlight the relevant expertise and experiences that align with the company's needs and culture.

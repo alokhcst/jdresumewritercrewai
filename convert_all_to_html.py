@@ -139,9 +139,9 @@ def convert_md_to_html(md_file, output_name=None):
 def convert_all_md_files():
     """Convert all markdown files in the current directory"""
     
-    # List of expected markdown files (including output directory)
+    # List of expected markdown files (all in output directory)
     md_files = [
-        'resume.md',
+        'output/resume.md',
         'output/cover_letter.md', 
         'output/skills_gap_analysis.md',
         'output/interview_prep_guide.md',

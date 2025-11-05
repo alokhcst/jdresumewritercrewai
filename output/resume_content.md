@@ -1,73 +1,94 @@
-**Alok Gupta**  
-Atlanta, GA  
+**ALOK GUPTA**  
+Alpharetta, GA  
 +1 678 779 6079  
-alokgupta.mdi@email.com  
-[LinkedIn](https://linkedin.com/in/alokgupta-mdi/) | [GitHub](https://github.com/alokhcst)
+alokgupta.mdi@gmail.com  
+[LinkedIn](https://linkedin.com/in/alokgupta-mdi/) | [GitHub](https://github.com/alokhcst)  
 
----  
+---
 
-**PROFESSIONAL SUMMARY**  
-Dynamic and results-driven technology leader with over 8 years of experience in optimizing technology-driven supply chain processes and enhancing application portfolios. Proven track record in driving strategic process improvements and implementing automation solutions that deliver measurable benefits. Adept at collaborating with cross-functional teams to align technology strategies with business objectives, thereby fostering operational excellence and innovation.
+**Professional Summary**  
+Dynamic Data Management & Strategy professional with over 12 years of experience in analytics and data governance within high-impact settings. Proven track record in leading strategic projects that enhance data integrity and analytics capabilities, achieving significant cost savings of over $1.3 million annually. Adept at aligning data strategies with business objectives to foster improved decision-making in fast-paced environments.
 
----  
+---
 
-**PROFESSIONAL EXPERIENCE**  
+**Core Competencies**  
+**Technical Skills**  
+- **Data Governance & Management:** Expert in developing and implementing data governance frameworks, ensuring compliance and data stewardship.  
+- **Analytics & Business Intelligence:** Proficient in crafting analytics strategies and delivering BI solutions using Power BI, Tableau, and Snowflake.  
+- **Master Data Management (MDM):** Skilled in using MDM tools like Alation for data cataloging and governance to enhance data accessibility.  
+- **Data Visualization:** Experienced with data visualization tools including Looker, Tableau, and Sigma Compute for insightful reporting.  
+- **Cloud Services:** Extensive use of AWS (S3, Lambda, Glue) and Azure technologies (Databricks, Azure SQL, Data Factory) for scalable data solutions.  
+- **Programming Languages:** Proficient in SQL, Python, and PySpark for data manipulation and analysis.
 
-**Senior Software Engineer**  
-Tech Corp Inc, Atlanta, GA  
-January 2020 - Present  
-- Spearhead the development of a comprehensive microservices architecture, achieving a 40% improvement in system performance through targeted database optimization and caching strategies.  
-- Drive process improvements that resulted in a 50% reduction in deployment times through the implementation of a robust CI/CD pipeline.  
-- Collaborate closely with product managers to define a technical roadmap that enhances application strategy and rationalization, leading to a 35% increase in user retention.  
-- Mentor and manage a team of 5 developers, fostering knowledge sharing and capacity building.
+**Soft Skills**  
+- Strategic Leadership  
+- Client Relationship Management  
+- Project Management  
+- Strong Communication Skills  
+- Business Acumen  
 
-**Full Stack Developer**  
-StartupXYZ, Atlanta, GA  
-June 2017 - December 2019  
-- Developed both frontend and backend features using React and Node.js, focusing on technology optimization and enhancing user experience, resulting in a 25% increase in user engagement.  
-- Implemented secure authentication systems while optimizing database queries, which contributed to a 30% reduction in response times.  
-- Collaborated with cross-functional teams to deliver major product features with zero critical bugs, demonstrating strong strategic planning capabilities.  
-- Scaled application infrastructure effectively to accommodate a 10x user growth, showcasing leadership in application portfolio management.
+---
 
-**Junior Developer**  
-WebDev Solutions, Atlanta, GA  
-September 2015 - May 2017  
-- Participated in the development of responsive web applications and played a key role in fixing bugs and implementing new features effectively.  
-- Achieved 50+ successful bug fixes and feature implementations while actively contributing to agile ceremonies and team knowledge-sharing sessions.
+**Work Experience**  
 
----  
+**Senior Data Architect**  
+*INVISTA (Koch Industries), USA*  
+November 2023 - Present  
+- Led a $4.5M technical migration project, enhancing data transformation time by 35% and establishing comprehensive data lineage for improved governance.
+- Devised and implemented data replication strategies on Snowflake, reducing financial anomalies by 85%, supporting real-time reconciliation for finance operations.
+- Enabled faster month-end close processes (5 days) by architecting Financial Falcon Data products, saving 15 FTE hours monthly.
+- Developed and managed an ingestion framework utilizing AWS technologies, enhancing business continuity by integrating real-time IoT sensor data.
+- All initiatives resulted in a 37% reduction in total cost of ownership, saving $300K annually.
 
-**TECHNICAL SKILLS**  
-- **Supply Chain Processes**: Process Optimization, Technology Implementation  
-- **Programming Languages**: Python, JavaScript, Java, Go, SQL  
-- **Frameworks**: React, Django, Flask, Express.js, FastAPI  
-- **Databases**: PostgreSQL, MongoDB, Redis, Elasticsearch  
-- **Cloud Platforms**: AWS, GCP, Azure, Docker, Kubernetes  
-- **Tools**: Git, Jenkins, JIRA, Confluence, Grafana, Prometheus  
-- **Methodologies**: Agile, Scrum, CI/CD, TDD, Microservices, RESTful APIs  
+**Solutions Architect Leader**  
+*Georgia-Pacific (Koch Industries), USA*  
+March 2021 - October 2023  
+- Designed and optimized Azure Databricks ETL pipelines, achieving a 40% reduction in data processing time for real-time insights.
+- Spearheaded DevSecOps initiatives to standardize CI/CD practices, decreasing deployment errors by 40% and accelerating project delivery timelines.
+- Implemented API-led strategies within integration frameworks, improving time-to-market for new features by 25%.
 
----  
+**Solution Architect**  
+*NCR Corporation, USA*  
+April 2011 - January 2021  
+- Collaborated on data ingestion strategies with frameworks like Apache Kafka and Data Factory, ensuring streamlined data migration processes.
+- Developed self-service analytics models in Tableau and Power BI, enhancing end-user access to actionable insights.
 
-**CERTIFICATIONS**  
-- AWS Certified Solutions Architect - Associate | AWS | 2021  
-- Certified Kubernetes Administrator | Cloud Native Computing Foundation | 2022  
-- MongoDB Certified Developer Associate | MongoDB | 2020  
+---
 
----  
+**Certifications**  
+- **AWS Certified Solutions Architect - Associate SAA-C03** | AWS | Nov 2022  
+- **Microsoft Certified: Azure Solutions Architect Expert - AZ-303 and AZ-304** | Azure | Apr 2021  
+- **Advance RAG Applications with Vector Databases** | LinkedIn | Jan 2025  
+- **Neo4j-GraphDB** | LinkedIn | Mar 2024  
+- **Microsoft Certified: Azure Fundamentals - AZ-900** | Azure | Dec 2020  
 
-**ACHIEVEMENTS**  
-- Best Innovation Award, Tech Corp Inc Annual Hackathon 2022  
-- Published three technical articles on medium.com with over 5,000 views  
-- Open-source contributor with over 500 contributions on GitHub
+---
 
----  
+**Notable Achievements**  
+- Awarded 'Innovation Award' by KOCH Leadership in 2024 for implementing Data Mesh, reducing delivery waste by 35%.
+- Received 'Collaboration Partner of the Year' recognition at AWS 2022 for enhancing manufacturing reliability and yielding $1.3 million in savings.
+- Recognized for exceeding expectations with the design of a 'Quote to Cash' solution, increasing forecasted revenue accuracy by 90%.
 
-**VOLUNTEERING**  
-- **Code for America - Volunteer Software Developer** | 2019 - 2020  
-  Developed civic tech solutions to enhance community services.  
-- **Tech Education Initiative - Mentor** | 2021 - Present  
-  Provide mentorship to underrepresented students in technology, promoting inclusivity and skill development.
+---
 
----  
+**Education**  
+**Master's in Information Technology**  
+*Management Development Institute*  
+May 2011 - June 2013  
 
-**NOTE**: This tailored resume content captures relevant qualifications and aligns with the job requirements at Genpact, emphasizing technology optimization and leadership in supply chain application strategy while adhering to ATS optimization practices.
+**Bachelor's in Information Technology**  
+*Uttar Pradesh Technical University*  
+May 2001 - June 2005  
+
+---
+
+**Volunteer Experience**  
+**Atlanta Habitat - Volunteer**  
+- Assisted in various stages of home construction for those in need, contributing to community welfare.  
+
+**Green Cell ATL - Volunteer**  
+- Promoted e-waste recycling and sustainability initiatives in local events.  
+
+---
+
+This ATS-optimized resume content strategically highlights Alok’s qualifications and achievements relevant to Data Management & Strategy, aligning with EY's core values and requirements while ensuring natural integration of relevant keywords throughout.

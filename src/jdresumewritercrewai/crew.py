@@ -32,7 +32,7 @@ class Jdresumewritercrewai():
     def candidate_profiler(self) -> Agent:
         return Agent(
             config=self.agents_config['candidate_profiler'], # type: ignore[index]
-            tools=[FileReadTool(), CandidateProfileParser()],
+            tools=[FileReadTool()],
             verbose=True
         )
 

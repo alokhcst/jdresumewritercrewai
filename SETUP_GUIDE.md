@@ -70,27 +70,29 @@ inputs = {
 ### 4. Provide Job Description
 
 **Option A: From URL**
-```python
-job_posting_url = "https://example.com/job-posting-url"
+- Add URL to `input/job_url.txt`
+```
+https://example.com/job-posting-url
 ```
 
 **Option B: From Local File**
-- Create `knowledge/job_description.txt` with the job posting text
-```python
-job_posting_url = "knowledge/job_description.txt"
+- Create `input/job_description.txt` with the job posting text
+- Update `input/job_url.txt` to reference it:
+```
+input/job_description.txt
 ```
 
 **Option C: Plain Text**
-- You can also modify the FileReadTool to handle raw text
+- Paste job description directly into `input/job_description.txt`
 
 ### 5. Provide Candidate Profile
 
 **Option A: Use Sample Profile**
-- Use `sample_candidate_profile.json` as reference
+- Use `input/sample_candidate_profile.json` as reference
 - Replace with your actual data
 
 **Option B: Create Custom Profile**
-- Follow the JSON structure in `sample_candidate_profile.json`
+- Follow the JSON structure in `input/sample_candidate_profile.json`
 - Include all required fields: personal_info, technical_skills, work_experience, etc.
 
 ## Running the System
